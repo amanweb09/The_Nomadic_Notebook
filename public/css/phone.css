@@ -1,0 +1,193 @@
+header {
+    width: 100%;
+    overflow: hidden;
+    height: 85vh;
+    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 98%, 60% 100%, 40% 98%, 20% 100%, 0 98%, 0 100%);*/
+}
+nav {
+    width: 100%;
+}
+section#sec-primary::before {
+    opacity: 0;
+}
+div#nav-links ul{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    display: none;
+    transition: all 0.3s ease;
+    background: #44a7a7;
+    position: absolute;
+    right: 6%;
+    top: 16%;
+    z-index: 9999;
+}
+div#nav-links ul.open {
+    display: inline-block;
+}
+div#nav-links ul li a i {
+    position: relative;
+    top: 20px;
+    left: 5%;
+    text-align: center;
+}
+i#link0 {
+    display: inline;
+    position: absolute;
+    top: 7%;
+    right: 15%;
+    cursor: pointer;
+    z-index: 99991;
+}
+
+div#nav-links ul li {
+    padding: 20px 10px;
+}
+div#logo h5 {
+    font-size: 1.5rem;    
+}
+div#intro-text {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 7%;
+}
+div#intro-text h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+div#intro-text h5 {
+    letter-spacing: 2px;
+}
+div#intro-text button.btn {
+    width: 40%;
+    white-space: nowrap;
+    height: 2.7rem;
+    background: #E0FFFF;
+    border: 2px solid transparent;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 1.3rem;
+}
+div#intro-text button.btn:hover {
+    background: transparent;
+    border: 2px solid rgb(64, 224, 208);
+}
+section#sec-primary {
+    height: max-content;
+    overflow: hidden;
+    background: linear-gradient(to right, var(--lightest) 10%, var(--pure) 10%);
+}
+div#blog-post {
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px 22px;
+}
+div#left-1 img{
+    transform: scale(1.2);
+}
+div#right-1 {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(0.7rem);
+}
+div#right-1 h2, div#left-2 h2 {
+    font-family: 'Lora';
+    font-size: 1.1rem;
+}
+div#right-1 p, div#left-2 p {
+    font-size: 0.8rem 
+}
+div#blog-post-1 {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 10px 22px;
+}
+div#left-2 {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(0.7rem);
+}
+div.blog-link {
+    height: 5rem;
+    padding-top: 1rem;
+}
+div#blog-list ul li h2, div#blog-list ul li p, div#blog-list ul li p a{
+    font-family: 'Lora';
+}
+/*div#blog-list::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 30%;
+    height: 200%;
+    background: var(--lightest);
+    z-index: -1;
+}*/
+div#blog-list {
+    background:  linear-gradient(#ffffff 80%, #E0FFFF, 80%);
+}
+div#blog-list ul {
+    padding-left: 5px;
+}
+div#blog-list ul li h2 {
+    font-size: 1.2rem;
+}
+div#blog-list ul li p {
+    font-size: 0.8rem;
+}
+div#blog-list button.btn {
+    width: 40%;
+    white-space: nowrap;
+    height: 2.7rem;
+    background: #E0FFFF;
+    border: 2px solid transparent;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 1.3rem;
+    margin-top: 1.3rem;
+}
+div#blog-list button.btn:hover {
+    background: transparent;
+    border: 2px solid rgb(64, 224, 208);
+}
+section#contact-section {
+    overflow: hidden;
+}
+div#contact {
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+}
+div#contact form {
+    padding: 34px 10px;    
+    overflow: hidden;
+}
+div#contact form label {
+    padding: 35px 0;
+    white-space: normal;
+}
+div#contact form input {
+    width: 80%;
+}
+div#contact form label#phone-label span {
+    font-size: 0.8rem
+}
+div#contact form button {
+    width: 40%;
+    white-space: nowrap;
+    height: 2.7rem;
+    background: #ffffff;
+    border: 2px solid transparent;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 1.3rem;
+    margin-top: 1.3rem;   
+}
+div#blog-list button.btn:hover {
+    background: transparent;
+    border: 2px solid rgb(64, 224, 208);
+}

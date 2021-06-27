@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nomadic Notebook</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/1a53f3ddfb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/phone.css" media="only screen and (max-width:1140px)">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="nav-split" id="logo">
+                    <h5 data-aos="flip-right">The Nomadic Notebook</h5>
+                </div>
+
+                <div class="nav-split" id="nav-links">
+                    <li><a href="#"></a><i id="link0" class="fas fa-bars"></i></a> </li>
+                    <ul id="nav-list">
+                        <li><a href="#"><i id="link1" class="fas fa-home links"></i></a> </li>
+                        <li><a href="#"><i id="link2" class="fas fa-book-reader links"></i></a> </li>
+                        <li><a href="#"><i id="link3" class="fas fa-address-book links"></i></a> </li>
+                        <li><a href="#"><i id="link4" class="fas fa-link links"></i></a> </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+            <div id="intro-text" data-aos="flip-left">
+                <h5 data-aos="zoom-out-up">What happens when</h5>
+                <h2 data-aos="zoom-out-up">you open someone else's Notebook?</h2>
+                <button class="btn" data-aos="zoom-out-up">Check Out</button>
+            </div>
+        </header>
+
+        <section id="sec-primary">
+            <h1>Top <span> Picks </span></h1>
+
+            <div id="blog-post" data-aos="flip-left">
+                <div id="left-1" class="top-picks">
+                    <a href="#"> <img src="./images/blog-bg-2.jpg" alt="" data-aos="zoom-in-down"> </a>
+
+                </div>
+                <div id="right-1" class="top-picks">
+                    <h2>Why are branding and packaging design important for food marketing?</h2>
+                    <p>Why does a company mentions nutritional facts or the specialties which makes it different from
+                        the same product of other companies on its packets? These facts convince the buyers that their
+                        products are better than the <a href="#">..Read More</a> </p>
+                </div>
+
+            </div>
+            <div id="blog-post-1" data-aos="flip-right">
+                <div id="left-2" class="top-picks">
+                    <h2>Are Trucks Built Better than Cars?</h2>
+                    <p>When we talk about being better, we are not only talking about the built material quality, but
+                        also emphasizing several other parameters, including engine, suspension, braking, proportional
+                        load carrying capacity, and lots more. Thus, to figure out <a href="#">...Read More</a> </p>
+                </div>
+
+                <div id="right-2" class="top-picks">
+                    <a href=""><img src="./images/blog-bg-3.jpg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="blog-link">
+                <h5><a href="#">Check out other blogs <i class="fas fa-arrow-circle-right"></i></a></h5>
+            </div>
+        </section>
+
+        <section id="blog-list-section">
+            <div id="blog-list">
+                <h1>Blog <span> List </span></h1>
+                <ul>
+                    <li data-aos="zoom-in-down">
+                        <h2>Are Chocolate Chips Plant-Based?</h2>
+                        <p>Chocolates have always been associated with luxury. The rich aromatic flavors of chocolate
+                            beans<a href="#">...Read More</a> </p>
+                    </li>
+                    <li data-aos="zoom-in-down">
+                        <h2>Best Wireless Lavalier Microphones in 2021</h2>
+                        <p>The world of sound recording is quite vast, yet extremely fascinating. With the boom of
+                            social platforms for podcasting, blogging, <a href="#">...Read More</a> </p>
+                    </li>
+                    <li data-aos="zoom-in-down">
+                        <h2>Best Guitar Strap Locks</h2>
+                        <p>The euphonious acoustic melodies taking the listener to a whole new world or the
+                            stage-rocking beats of a distortion – whether you talk about an acoustic guitar or <a
+                                href="#">...Read More</a> </p>
+                    </li>
+                    <li data-aos="zoom-in-down">
+                        <h2>Carpal Tunnel Exercises</h2>
+                        <p>You might have noticed your hand “falling asleep” while sleeping and you begin feeling
+                            numbness in your hand as you wake up. Well, if you face <a href="#">...Read More</a> </p>
+                    </li>
+                    <li data-aos="zoom-in-down">
+                        <h2>Impact of the Covid-19 Pandemic on Students Looking for Abroad Education</h2>
+                        <p>The COVID-19 pandemic has put the world to a sudden halt. The situation is no better in the
+                            overseas education domain and that’s what the blog talks about – The impact of COVID-19
+                            pandemic on <a href="#">...Read More</a> </p>
+                    </li>
+                </ul>
+
+                <button class="btn">Check Out More</button>
+            </div>
+        </section>
+
+        <section id="contact-section">
+            <div id="contact">
+                <h1 data-aos="zoom-in-down">Just Ping Us Up <span> To Use Our Works </span></h1>
+                <form action="#" method="POST" data-aos="flip-right" onsubmit="return validateForm(), contactValidation(), emailValidation()">
+                    <label for="name" id="name-label">Name</label>
+                    <input id="name-field" type="text" name="name" autocapitalize="true" placeholder="Enter Your Name" required>
+
+                    <label for="email" id="email-label">Email</label>
+                    <input id="email-field" type="email" name="email" autocomplete="email" placeholder="Enter Your Email" required>
+
+                    <label for="phone" id="phone-label">Contact Number <span> (optional) </span></label>
+                    <input id="tel-field" type="tel" name="num" placeholder="Enter Your Contact Number">
+
+                    <button id="submit-button" class="btn" type="submit">Submit</button>
+                </form>
+
+            </div>
+        </section>
+
+        <footer>
+            <div id="footer">
+                www.TheNomadicNotebook.com &copy;| All Rights Reserved
+            </div>
+        </footer>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 800
+            }
+        );
+    </script>
+
+</body>
+
+</html>

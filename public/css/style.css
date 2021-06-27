@@ -1,0 +1,364 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kirang Haerang', cursive
+}
+
+/*VARIBALES*/
+:root {
+    --light: rgb(64, 224, 208);
+    --dark: rgb(20, 206, 209);
+    --lightest: #E0FFFF;
+    --pure: #ffffff;
+    --black: #000000;
+}
+
+/*HEADER*/
+header {
+    height: 80vh;
+    /*border: 2px solid red;*/
+    background: linear-gradient(rgb(64, 224, 208, 0.3), rgb(0, 206, 209, 0.3)), url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*NAVIGATION MENU*/
+nav {
+    /*border: 2px solid blue;*/
+    display: flex;
+    justify-content: space-between;
+}
+i#link0 {
+    display: none;
+}
+div#logo h5 {
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 1rem 2.6rem; 
+    color: var(--pure);
+}
+div#nav-links ul{
+    padding: 20px 38px;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    /*border: 2px solid yellow;*/
+}
+div#nav-links li {
+    padding: 2px 35px;
+    margin: 0 12px;
+}
+div#nav-links li i {
+    transform: scale(1.5);
+    color: var(--pure);
+    transition: all 0.2s linear;
+}
+div#nav-links li a i:hover {
+    color: var(--lightest);
+    animation: nav-rotate 1s 1 linear;
+}
+
+/*INTRO-TEXT*/
+div#intro-text {
+    height: 50vh;
+    width: 80%;
+    /*border: 2px solid white;*/
+    color: var(--pure);
+    margin: auto;
+    transform: translateY(20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+div#intro-text h5 {
+    padding: 10px 34px 0px 34px;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    transform: translateY(50%);
+    text-transform: lowercase;
+}
+div#intro-text h2 {
+    padding: 0px 30px 5px 30px;
+    font-size: 2.5em;
+    letter-spacing: 7px;
+    text-transform: capitalize;
+}
+button.btn {
+    font-family: cursive;
+    width: 20%;
+    height: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    outline: none;
+    border: 2px solid transparent;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all 0.2s ease-in-out;
+}
+div#intro-text button:hover {
+    border: 2px solid var(--lightest);
+    background: transparent;
+    color: var(--pure);
+}
+
+/*TOP PICKS*/
+section#sec-primary {
+    /*border: 2px solid blueviolet;*/
+    height: 100vh;
+    background: linear-gradient(to right, var(--lightest) 10%, var(--pure) 10%);
+}
+section#sec-primary h1{
+    font-size: 3.2rem;
+    padding: 22px;
+    text-align: center;
+    font-family: cursive;
+    letter-spacing: 3px;
+}
+section#sec-primary h1 span {
+    color: var(--dark);
+}
+
+/*BLOG POST FIRST*/
+div#blog-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 2px solid red;*/
+    width: 70%;
+    margin: auto;
+}
+div.top-picks {
+    width:40%;
+    /*border: 2px solid yellow;*/
+    margin: 0 22px;
+}
+div.top-picks a{
+    text-decoration: none;
+    color: var(--dark);
+}
+div#left-1 {
+    width: 30%;
+    flex: 1;
+    animation: blog-posts 1s 1 linear;
+}
+div#blog-post div#left-1 img{
+    width: 85%;
+    clip-path: circle();
+    animation: blog-posts 1s 1 linear;
+}
+div#right-1 {
+    flex: 2;
+    animation:  blog-posts-para 1s 1 linear;;
+} 
+div#right-1 h2 {
+    font-family: cursive;
+    font-size: 1.3rem;
+    padding-bottom: 15px;
+    animation:  blog-posts-para 1s 1 linear;
+}
+div#right-1 p, div#right-1 a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation:  blog-posts-para 1s 1 linear;
+}
+
+
+/*BLOG POST SECOND*/
+div#blog-post-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 33px;
+    width: 70%;
+    margin: auto;
+}
+div#right-2 {
+    width: 30%;
+    flex: 1;
+    animation:  blog-posts-para 1s 1 linear;
+}
+div#right-2 img{
+    width: 100%;
+    clip-path: circle();
+    animation:  blog-posts-para 1s 1 linear;
+}
+div#left-2 {
+    flex: 2;
+    animation: blog-posts 1s 1 linear;
+}
+div#left-2 h2 {
+    font-family: cursive;
+    font-size: 1.3rem;
+    padding-bottom: 15px;
+}
+div#left-2 p, div#left-2 p a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div.blog-link {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 2px solid blue;*/
+    margin: auto;
+}
+div.blog-link h5 a{
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+div.blog-link h5 a:hover {
+    color: var(--dark);
+}
+
+/*BLOG LIST*/
+section#blog-list-section {
+    height: max-content;
+}
+div#blog-list {
+    height: 100%;
+    background: #E0FFFF;
+    background: linear-gradient(to right, #ffffff 70%, var(--lightest) 70%);
+}
+
+div#blog-list h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    padding: 34px;
+    letter-spacing: 3px;
+    color: var(--light);
+}
+div#blog-list h1 span {
+    color: var(--black);
+}
+div#blog-list ul li h2, div#blog-list ul li p, div#blog-list ul li p a{
+    font-family: 'Lora';
+}
+div#blog-list ul {
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 0.5rem;
+}
+div#blog-list ul li {
+    padding: 1.3rem;
+}
+div#blog-list ul li a {
+    text-decoration: none;
+    color: var(--dark);
+}
+div#blog-list ul li h2, div#blog-list ul li p, div#blog-list ul li a {
+    font-family: cursive;
+    animation: blog-posts-para 1s 1 linear;
+}
+div#blog-list ul li h2 {
+    font-weight: 600;
+}
+div#blog-list button.btn {
+    display: block;
+    margin: auto;
+    transition: all 0.2s ease;
+}
+div#blog-list button.btn:hover {
+    color: var(--light);
+    background: transparent;
+    border: 2px solid var(--lightest);
+}
+
+/*CONTACT SECTION*/
+section#contact-section {
+    width: 100%;
+    height: max-content;    
+}
+div#contact {
+    width: 100%;
+    height: max-content;
+    border-top: var(--light);
+}
+div#contact h1 {
+    text-align: center;
+    padding: 30px;
+    padding-top: 7%;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+}
+div#contact h1 span {
+    color: var(--light);
+}
+div#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 34px;
+    width: max-content;
+    margin: auto;
+    background: var(--lightest);
+}
+div#contact form label {
+    padding: 35px;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+div#contact form input {
+    width: 90%;
+    height: 2rem;
+    text-align: center;
+    border: 2px solid var(--pure);
+    border-radius: 2px;
+}
+div#contact form button {
+    margin-top: 20px;
+    transition: all 0.2s ease;
+}
+div#contact form button.btn:hover {
+    border: 2px solid var(--dark);
+    color: var(--black);
+    background: transparent;
+}
+/*FOOTER*/
+    div#footer {
+        width: 100%;
+        text-align: center;
+        padding: 34px 20px 10px 20px;
+        font-family: 'Lora';
+    }
+
+/*ANIMATIONS*/
+/*@keyframes blog-posts {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes blog-posts-para {
+    0% {
+        transform: translateX(50%);
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes nav-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}*/
