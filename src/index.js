@@ -15,11 +15,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-    res.status(200).send('about.html')
+    res.status(200).send('about.html');
 });
 
 app.get('/blog', (req, res) => {
-    res.status(200).send('blog.html')
+    res.status(200).send('blog.html');
 });
 
 //SERVER LISTENING
