@@ -18,6 +18,10 @@ app.get('/about', (req, res) => {
     res.status(200).send('about.html')
 });
 
+app.get('/blogs', (req, res) => {
+    res.status(200).send('blog.html')
+});
+
 //SERVER LISTENING
 app.listen(port, () => {
     console.log(`Server established on http://localhost:${port}`)
