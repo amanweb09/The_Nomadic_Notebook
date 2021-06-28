@@ -18,7 +18,7 @@ app.get('/about', (req, res) => {
     res.status(200).send('about.html')
 });
 
-app.get('/blogs', (req, res) => {
+app.get('/blog', (req, res) => {
     res.status(200).send('blog.html')
 });
 
