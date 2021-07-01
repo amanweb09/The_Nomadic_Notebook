@@ -1,22 +1,21 @@
-# The_Nomadic_Notebook
-www.TheNomadicNotebook.com official website
-owner: Aman Khanna
+## The_Nomadic_Notebook
 
-**Description (Purpose/Use)**
+
+# Description (Purpose/Use)
 The Nomadic Notebook is a blog website where the writer pens down his thoughts and shares them with the readers. The writer writes on numerous niches, including tech, travel, education, luxury, economy, current affairs, and many more. writing enthusiasts can come forward to share their works and get their works featured on the website. 
 
-**Languages Used**
+# Languages Used
 Frontend: HTML, CSS, JavaScript
 Backend: Nodejs
 
-**Dependencies**
+# Dependencies
 Express, Handlebars
 
-**Libraries Included**
+# Libraries Included
 AOS
 
-**Author(s)**
+# Author(s)
 Aman Khanna
 
-**License**
+# License
 Check License.md file 
