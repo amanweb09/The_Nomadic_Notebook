@@ -13,7 +13,9 @@
     --pure: #ffffff;
     --black: #000000;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 /*HEADER*/
 header {
     height: 80vh;
