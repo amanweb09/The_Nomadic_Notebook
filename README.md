@@ -6,12 +6,12 @@ The Nomadic Notebook is a blog website where the writer pens down his thoughts a
 
 ## Languages Used
 * Frontend
-*   HTML5
-*   CSS3
-*   JavaScript
+*   * HTML5
+*   * CSS3
+*   * JavaScript
 
 * Backend
-*   NodeJs
+*   * NodeJs
 
 ## Dependencies
 Express, Handlebars
