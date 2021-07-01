@@ -2,14 +2,48 @@
 const hamburger = document.getElementById('link0');
 const home = document.getElementById('link1');
 const blog = document.getElementById('link2');
-const contact = document.getElementById('link3');
-const join = document.getElementById('link4');
+const about = document.getElementById('link3');
+const contact = document.getElementById('link4');
 
 //HAMBURGER FUNCTIONS
 hamburger.addEventListener('click', () => {
     document.getElementById('nav-list').classList.toggle('open');
     document.querySelectorAll(".links").classList.toggle('open');
     hamburger.classList.toggle('open');
+})
+
+//NAVIGATION MENU
+
+//HOME
+home.addEventListener('mouseover', () => {
+    home.innerHTML = ' Home'
+})
+home.addEventListener('mouseout', () => {
+    home.innerHTML = ''
+})
+
+//BLOG
+blog.addEventListener('mouseover', () => {
+    blog.innerHTML = ' Blog'
+})
+blog.addEventListener('mouseout', () => {
+    blog.innerHTML = ''
+})
+
+//ABOUT
+about.addEventListener('mouseover', () => {
+    about.innerHTML = ' About'
+})
+about.addEventListener('mouseout', () => {
+    about.innerHTML = ''
+})
+
+//CONTACT
+contact.addEventListener('mouseover', () => {
+    contact.innerHTML = ' Contact'
+})
+contact.addEventListener('mouseout', () => {
+    contact.innerHTML = ''
 })
 
 //FORM VALIDATION

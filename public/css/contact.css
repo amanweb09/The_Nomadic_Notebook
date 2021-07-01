@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --light: rgb(64, 224, 208);
+    --dark: rgb(20, 206, 209);
+    --lightest: #E0FFFF;
+    --pure: #ffffff;
+    --black: #000000;
+}
+section#contact-section {
+    width: 100%;
+    height: max-content;    
+}
+div#contact {
+    width: 100%;
+    height: max-content;
+    border-top: var(--light);
+}
+div#contact h1 {
+    text-align: center;
+    padding: 30px;
+    padding-top: 7%;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+}
+div#contact h1 span {
+    color: var(--light);
+}
+div#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 34px;
+    width: max-content;
+    margin: auto;
+    background: var(--lightest);
+}
+div#contact form label {
+    padding: 35px;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+div#contact form input {
+    width: 90%;
+    height: 2rem;
+    text-align: center;
+    border: 2px solid var(--pure);
+    border-radius: 2px;
+}
+div#contact form button {
+    margin-top: 20px;
+    transition: all 0.2s ease;
+}
+div#contact form button.btn:hover {
+    border: 2px solid var(--dark);
+    color: var(--black);
+    background: transparent;
+}
+div#footer {
+    width: 100%;
+    text-align: center;
+    padding: 34px 20px 10px 20px;
+    font-family: 'Lora';
+}
+@media only screen and (max-width: 1140px) {
+    div#contact {
+        overflow: hidden;
+        width: 80%;
+        margin: auto;
+    }
+    div#contact form {
+        padding: 34px 10px;    
+        overflow: hidden;
+    }
+    div#contact form label {
+        padding: 35px 0;
+        white-space: normal;
+    }
+    div#contact form input {
+        width: 80%;
+    }
+    div#contact form label#phone-label span {
+        font-size: 0.8rem
+    }
+    div#contact form button {
+        width: 40%;
+        white-space: nowrap;
+        height: 2.7rem;
+        background: #ffffff;
+        border: 2px solid transparent;
+        font-family: 'Courier New', Courier, monospace;
+        margin-bottom: 1.3rem;
+        margin-top: 1.3rem;   
+    }
+    div#blog-list button.btn:hover {
+        background: transparent;
+        border: 2px solid rgb(64, 224, 208);
+    }
+}

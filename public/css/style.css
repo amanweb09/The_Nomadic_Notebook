@@ -32,6 +32,9 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+.links {
+    transition: all 0.2s linear;
+}
 i#link0 {
     display: none;
 }
@@ -335,32 +338,4 @@ div#contact form button.btn:hover {
         font-family: 'Lora';
     }
 
-/*ANIMATIONS*/
-/*@keyframes blog-posts {
-    0% {
-        transform: translateX(-50%);
-        opacity: 0.3;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-@keyframes blog-posts-para {
-    0% {
-        transform: translateX(50%);
-        opacity: 0.3;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-@keyframes nav-rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}*/
+

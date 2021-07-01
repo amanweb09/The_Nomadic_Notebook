@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+    <div id="contact">
+                <h1 data-aos="zoom-in-down">Just Ping Us Up <span> To Use Our Works </span></h1>
+                <form action="#" method="POST" data-aos="flip-right" onsubmit="return validateForm(), contactValidation(), emailValidation()">
+                    <label for="name" id="name-label">Name</label>
+                    <input id="name-field" type="text" name="name" autocapitalize="true" placeholder="Enter Your Name" required>
+
+                    <label for="email" id="email-label">Email</label>
+                    <input id="email-field" type="email" name="email" autocomplete="email" placeholder="Enter Your Email" required>
+
+                    <label for="phone" id="phone-label">Contact Number <span> (optional) </span></label>
+                    <input id="tel-field" type="tel" name="num" placeholder="Enter Your Contact Number">
+
+                    <button id="submit-button" class="btn" type="submit">Submit</button>
+                </form>
+
+            </div>
+            <footer>
+            <div id="footer">
+                www.TheNomadicNotebook.com &copy;| All Rights Reserved
+            </div>
+        </footer>
+</body>
+</html>

@@ -28,7 +28,9 @@ app.get('/blog', (req, res) => {
     res.status(200).render('blog.hbs');
 });
 
-
+app.get('/contact', (req, res) => {
+    res.status(200).render('contact.hbs')
+})
 
 //SERVER LISTENING
 app.listen(port, () => {
