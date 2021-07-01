@@ -23,7 +23,7 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/blog', (req, res) => {
-    res.status(200).render('blog.html');
+    res.status(200).render('blog.hbs');
 });
 
 //SERVER LISTENING
